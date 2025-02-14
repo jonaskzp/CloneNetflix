@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Inter", serif;
+  }
+html{
+    font-size: 62.5%;
+}
+
+/*DIMENSÕES HEADER/BANNER*/
+header{
+    display: flexbox;
+    height: 50rem;
+    width: 100%vw;
+    max-width: 128rem;
+    overflow: hidden;
+    background-image: url(./assets/img/background.jpeg);
+    background-position: center;
+    background-size: 90%;
+}
+
+/*MENU SUPERIOR*/
+.menu{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #070606b2, rgba(77, 71, 68, 0));
+    overflow: hidden;
+    height:5rem ;
+    width: 100%vw;
+    max-width: 128rem;
+}
+.imgmenu img{
+    margin-right: 5rem;
+    margin-left: 2rem;
+    height:8rem ;
+    width: auto;
+}
+.menu a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+.menubot{
+    text-decoration:none;
+    margin-right: 3rem;
+}
+.areauso{
+    display: flex;
+    align-items: center;
+    margin-left: 13rem;
+    padding-left: 33rem;
+}
+.menubot2{
+    padding: .5rem;
+}
+.notf{
+    margin-right: 2rem;
+}
+.menubot2 img{
+ height: 2rem;
+}
+
+.usulist{
+    border: solid green;
+}
+#usuarios{
+    border: solid yellow;
+}
+
+/*BANNER E BOTÕES PRINCIPAIS*/
+.banner img{
+    margin-top: 8rem;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+    width: 40rem;
+}
+.home p{
+    width: 40rem;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+    color: whitesmoke;
+    font-size: 1.7rem;
+}
+.botoes{    
+    align-items: center; 
+    display: flex; 
+    gap: 2rem;
+    margin-left: 8rem;
+    width: 50rem;
+}
+.botoes img{
+    width: 2.5rem;
+}
+.but1{
+all: unset;
+font-family: "Inter", serif;
+font-size: 1.8rem;
+font-weight: 500;
+color: rgb(0, 0, 0);
+display: flex;              
+align-items: center;    
+background-color: rgb(255, 255, 255);
+padding: 1.2rem 2.5rem;
+gap: 8px;                  
+border-radius: .4rem;
+}
+.but1:hover{
+    transition: .3s;
+    cursor: pointer;
+    background-color: rgb(221, 213, 213);
+}
+.but2{
+    all: unset;
+    font-family: "Inter", serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: flex;              
+    align-items: center;    
+    background-color: rgba(75, 72, 72, 0.781);
+    padding: 1.2rem 2.5rem;
+    gap: 10px;                  
+    border-radius: .4rem;
+    }
+    .but2 img{
+        filter: invert(100%);
+    }
+    .but2:hover{
+        transition: .3s;
+        cursor: pointer;
+        background-color: rgb(53, 52, 52);
+    }
