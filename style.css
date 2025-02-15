@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   body{
+    background-color: black;
     font-family: "Inter", serif;
   }
 html{
@@ -17,14 +18,15 @@ header{
     width: 100%vw;
     max-width: 128rem;
     overflow: hidden;
-    background-image: url(./assets/img/background.jpeg);
-    background-position: center;
-    background-size: 90%;
+    background: 
+    linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.24) 50%),
+    url("./assets/img/background.jpeg") no-repeat center/cover;
 }
 
 /*MENU SUPERIOR*/
 .menu{
-    padding: .5rem;
+    padding: 2rem;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     background: linear-gradient(to bottom, #070606b2, rgba(77, 71, 68, 0));
@@ -50,7 +52,7 @@ header{
 .areauso{
     display: flex;
     align-items: center;
-    margin-left: 13rem;
+    margin-left: 10rem;
     padding-left: 33rem;
 }
 .menubot2{
@@ -62,7 +64,6 @@ header{
 .menubot2 img{
  height: 2rem;
 }
-
 .usulist{
     border: solid green;
 }
@@ -133,3 +134,38 @@ border-radius: .4rem;
         cursor: pointer;
         background-color: rgb(53, 52, 52);
     }
+    .box{
+        padding: 2rem;
+    }
+.box h1{
+    margin-bottom: -1rem;
+    display: flexbox;
+    color: white;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    align-content:bottom;
+    gap: 1rem;
+    max-width: 128rem;
+    height: 24rem;
+    overflow-x: scroll;
+    white-space: nowrap; 
+    scrollbar-width: none;
+    cursor: grab;}
+
+.gallery.active {
+        cursor: grabbing;
+      }
+    
+.gallery::-webkit-scrollbar {
+        display: none; /* Esconde a barra no Chrome e Edge */
+      }
+.serie img{
+    height: 18rem;
+    width: 32rem;
+}
+.serie:hover{
+    transition: .4s;
+    height: 21rem;
+}
