@@ -134,38 +134,52 @@ border-radius: .4rem;
         cursor: pointer;
         background-color: rgb(53, 52, 52);
     }
-    .box{
+
+/*caixa series*/
+
+ .box{
         padding: 2rem;
     }
 .box h1{
-    margin-bottom: -1rem;
-    display: flexbox;
     color: white;
 }
+
 .gallery{
     display: flex;
     align-items: center;
     align-content:bottom;
     gap: 1rem;
     max-width: 128rem;
-    height: 24rem;
+    height: 20rem;
     overflow-x: scroll;
     white-space: nowrap; 
     scrollbar-width: none;
     cursor: grab;}
-
-.gallery.active {
-        cursor: grabbing;
+section {
+         
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 128rem;
+        height: 20rem;
+        scrollbar-width: none;
+        cursor: grab;
+        overflow-x: scroll;
+        }
+        
+.serie{
+        padding: 0 2px;
+        transition: 250ms all;
       }
-    
-.gallery::-webkit-scrollbar {
-        display: none; /* Esconde a barra no Chrome e Edge */
+      
+      .-animation:hover {
+        margin: 0 4rem;
+        transform: scale(1.2);
       }
 .serie img{
-    height: 18rem;
-    width: 32rem;
+    height: 13rem;
+    width: 26rem;
 }
-.serie:hover{
-    transition: .4s;
-    height: 21rem;
-}
+
+
+ 
