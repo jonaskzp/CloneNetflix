@@ -60,7 +60,6 @@ header{
 .menubot2 img{
  height: 2rem;
 }
-
 /* Foto do usuário selecionado */
 .user-menu img {
     margin-left: 1rem;
@@ -69,11 +68,9 @@ header{
     border: 2px solid white;
     transition: transform 0.3s;
 }
-
 .user-menu img:hover {
     transform: scale(1.1);
 }
-
 /* Dropdown oculta por padrão */
 .dropdown {
     color: antiquewhite;
@@ -88,7 +85,6 @@ header{
     cursor:pointer;
     width: 180px;
 }
-
 /* Estiliza as opções da lista */
 .user-option {
     display: flex;
@@ -106,7 +102,6 @@ header{
 .user-option:hover {
     background: #333;
 }
-
 /*BANNER E BOTÕES PRINCIPAIS*/
 .banner img{
     margin-top: 8rem;
@@ -162,15 +157,14 @@ border-radius: .4rem;
     gap: 10px;                  
     border-radius: .4rem;
     }
-    .but2 img{
+.but2 img{
         filter: invert(100%);
     }
-    .but2:hover{
+.but2:hover{
         transition: .3s;
         cursor: pointer;
         background-color: rgb(53, 52, 52);
     }
-
 /*caixa series*/
 
  .box{
@@ -179,7 +173,6 @@ border-radius: .4rem;
 .box h1{
     color: white;
 }
-
 .gallery{
     display: flex;
     align-items: center;
@@ -192,7 +185,17 @@ border-radius: .4rem;
     white-space: nowrap; 
     scrollbar-width: none;
 }
-#scroll-left{
+.section1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 128rem;
+    height: 20rem;
+    scrollbar-width: none;
+    overflow-x: scroll;
+    overflow-y: hidden  ;
+    }
+#scroll-left1{
     all: unset;
     background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
     position: absolute;
@@ -205,8 +208,7 @@ border-radius: .4rem;
     cursor: pointer;
     transition: background 0.3s, opacity 0.3s;
 }
-
-#scroll-right{
+#scroll-right1{
     background: linear-gradient(to left,#000000, rgba(41, 39, 39, 0));
     position: absolute;
     border: none;
@@ -219,23 +221,82 @@ border-radius: .4rem;
     cursor: pointer;
     transition: background 0.3s, opacity 0.3s;
 }
-section {
-         
-        position: relative;
-        display: flex;
-        align-items: center;
-        max-width: 128rem;
-        height: 20rem;
-        scrollbar-width: none;
-        overflow-x: scroll;
-        overflow-y: hidden  ;
-        }
-        
+.section2 {
+           position: relative;
+           display: flex;
+           align-items: center;
+           max-width: 128rem;
+           height: 20rem;
+           scrollbar-width: none;
+           overflow-x: scroll;
+           overflow-y: hidden  ;
+           } 
+#scroll-left2{
+            all: unset;
+            background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
+            position: absolute;
+            left: 1px; /* Lateral esquerda */
+            z-index: 10;
+            color: white;
+            padding: 8rem 7rem;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, opacity 0.3s;
+        }        
+#scroll-right2{
+            background: linear-gradient(to left,#000000, rgba(41, 39, 39, 0));
+            position: absolute;
+            border: none;
+            right: 1px; /* Lateral esquerda */
+            z-index: 10;
+            color: white;
+            padding: 8rem 7rem;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, opacity 0.3s;
+        }     
+.section3 {
+           position: relative;
+           display: flex;
+           align-items: center;
+           max-width: 128rem;
+           height: 20rem;
+           scrollbar-width: none;
+           overflow-x: scroll;
+           overflow-y: hidden  ;
+           }
+#scroll-left3{
+            all: unset;
+            background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
+            position: absolute;
+            left: 1px; /* Lateral esquerda */
+            z-index: 10;
+            color: white;
+            padding: 8rem 7rem;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, opacity 0.3s;
+        }        
+#scroll-right3{
+            background: linear-gradient(to left,#000000, rgba(41, 39, 39, 0));
+            position: absolute;
+            border: none;
+            right: 1px; /* Lateral esquerda */
+            z-index: 10;
+            color: white;
+            padding: 8rem 7rem;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, opacity 0.3s;
+        }  
 .serie{
         padding: 0 2px;
         transition: 250ms all;
-      }
-      
+      }     
       .-animation:hover {
         margin: 0 4rem;
         transform: scale(1.2);
@@ -246,5 +307,45 @@ section {
 }
 
 
+/*footer*/
+.ctarea{
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+.redes a{
+all: unset;
+cursor: pointer;
+width: 3rem;
+height: 3rem;
+padding: 2rem;
+}
+.redes img{ 
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
+.list-opt{
+    padding: 3rem;
+    width: 100%vw;
+    max-width: 128rem;
+}
+.list-opt a{
+    color: rgb(185, 181, 181);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.list-opt ul{
+    line-height: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas com tamanho igual */
+    gap: 1rem; /* Espaçamento entre os itens */
+    margin-bottom: 8rem;
+}
  
+.servbot{
+    margin-top: 4rem;
+    all: unset;
+    border: solid .1rem grey;
+    background-color: transparent;
+    padding: 1.5rem;
+}

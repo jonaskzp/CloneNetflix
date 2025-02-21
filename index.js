@@ -20,10 +20,46 @@ window.addEventListener("click", (e) => {
     }
 });
 
+//scroll ga
+//sessao1
 document.addEventListener("DOMContentLoaded", function () {
-    const gallery = document.querySelector(".gallery section"); // Seção que contém as imagens
-    const btnLeft = document.getElementById("scroll-left");
-    const btnRight = document.getElementById("scroll-right");
+    const gallery = document.querySelector(".section1" ); // Seção que contém as imagens
+    const btnLeft = document.getElementById("scroll-left1");
+    const btnRight = document.getElementById("scroll-right1");
+
+    const scrollAmount = 300; // Define a quantidade de rolagem por clique
+
+    btnLeft.addEventListener("click", function () {
+        gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+
+    btnRight.addEventListener("click", function () {
+        gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+});
+
+//sessao2
+document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".section2" ); // Seção que contém as imagens
+    const btnLeft = document.getElementById("scroll-left2");
+    const btnRight = document.getElementById("scroll-right2");
+
+    const scrollAmount = 300; // Define a quantidade de rolagem por clique
+
+    btnLeft.addEventListener("click", function () {
+        gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+
+    btnRight.addEventListener("click", function () {
+        gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+});
+
+//sessao3
+document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".section3" ); // Seção que contém as imagens
+    const btnLeft = document.getElementById("scroll-left3");
+    const btnRight = document.getElementById("scroll-right3");
 
     const scrollAmount = 300; // Define a quantidade de rolagem por clique
 
