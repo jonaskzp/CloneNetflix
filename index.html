@@ -30,17 +30,26 @@
                         <a href="" class="menubot2"> <img src="./assets/icons/icons8-pesquisar-50.png" alt=""></a>
                         <a href="" class="menubot2"> <img src="./assets/icons/icons8-notificação-30.png" alt=""></a>
                     </div>
-                    <div class="usulist">
-                        <label for="usuarios"></label>
-                        <select id="usuarios">
-                            <option value="1"> AMANDA</option>
-                            <option value="2">PEDRO</option>
-                            <option value="3">MATEUS</option>
-                        </select>
-    
-                    </div>
 
                 </section>
+                <div id="usuWin" class="user-menu">
+                    <img id="selectedUser" src="./assets/img/user 1.png" alt="Usuário Atual" >
+                    <a href=""></a>
+                    <div id="userList" class="dropdown">
+                        <div class="user-option" onclick="changeUser('./assets/img/user 1.png')">
+                            <img src="./assets/img/user 1.png" alt="Usuário 1"> Lionel
+                        </div>
+                        <div class="user-option" onclick="changeUser('./assets/img/user 2')">
+                            <img src="./assets/img/user 2" alt="Usuário 2"> Paolo
+                        </div>
+                        <div class="user-option" onclick="changeUser('./assets/img/user 3.jpg')">
+                            <img src="./assets/img/user 3.jpg" alt="Usuário 3"> Cristiano   
+                        </div>
+                        <div class="user-option" onclick="changeUser('./assets/img/user 4.jpg')">
+                            <img src="./assets/img/user 4.jpg" alt="Adicionar Usuário"> Adicionar Usuário
+                        </div>
+                    </div>
+                </div>
 
             </div>
                 
@@ -69,12 +78,12 @@
             
             <div class="box">
                 <h1>Minha Lista</h1>
-                <a href="#section3" class="arrow__btn"></a>
 
                 <div class="gallery">
-                   
+                 
+                    <button id="scroll-left">  </button>
+
                     <section id="section1">
-                            <a href="#section3" class="arrow__btn"></a>
 
                             <div class="serie -animation -animation">
                                 <img src="./assets/img/mylist/poster_01.png" alt="imagem serie bojack">
@@ -96,19 +105,19 @@
                             </div>
                             <div class="serie -animation">
                                 <img src="./assets/img/mylist/poster_07.png" alt="">
-                            </div>
+                            </div> 
                         </section>
-
+                        <button id="scroll-right"> </button>
                 </div>
-                <a href="#section1" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
-
             </div>
 
             <div class="box">
                 <h1>Em Alta</h1>
                 <div class="gallery">
-                    <section id="section2">
-                        <a href="#section1" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
+
+                    <button id="scroll-left">  </button>
+
+                    <section id="section1">
 
                         <div class="serie -animation">
                             <img src="./assets/img/em alta/poster_01.png" alt="imagem serie">
@@ -132,14 +141,16 @@
                             <img src="./assets/img/em alta/poster_11.png" alt="imagem serie">
                         </div>
                     </section>
-                </div>
-                <a href="#section2" class="arrow__btn"><i class="fas fa-angle-right"></i></a>
+                    <button id="scroll-right"> </button>
 
+                </div>
             </div>
 
             <div class="box">
                 <h1>Series Bem Avaliadas</h1>
                 <div class="gallery">
+                    <button id="scroll-left">  </button>
+
                     <section id="section3">
                             <a href="#section2" class="arrow__btn"><i class="fas fa-angle-left"></i></a>
                     
@@ -164,8 +175,9 @@
                         <div class="serie -animation">
                             <img src="./assets/img/top/poster_08.png"alt="imagem serie">
                         </div>
-
                     </section>
+                    <button id="scroll-right"> </button>
+
                 </div>
 
             </div>
@@ -176,5 +188,6 @@
      <footer>
      <!-- Rodapé do site -->
      </footer>
+     <script src="./index.js"></script>
 </body>
 </html>

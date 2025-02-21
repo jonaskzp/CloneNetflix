@@ -25,6 +25,7 @@ header{
 
 /*MENU SUPERIOR*/
 .menu{
+
     padding: 2rem;
     padding-top: 2rem;
     display: flex;
@@ -47,28 +48,63 @@ header{
 }
 .menubot{
     text-decoration:none;
-    margin-right: 3rem;
+    margin-right: 3.5rem;
 }
-.areauso{
-    display: flex;
-    align-items: center;
-    margin-left: 10rem;
-    padding-left: 33rem;
-}
+
 .menubot2{
     padding: .5rem;
 }
 .notf{
-    margin-right: 2rem;
+    margin-left: 45rem;
 }
 .menubot2 img{
  height: 2rem;
 }
-.usulist{
-    border: solid green;
+
+/* Foto do usuário selecionado */
+.user-menu img {
+    margin-left: 1rem;
+    width: 4rem;
+    border-radius: .8rem;
+    border: 2px solid white;
+    transition: transform 0.3s;
 }
-#usuarios{
-    border: solid yellow;
+
+.user-menu img:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown oculta por padrão */
+.dropdown {
+    color: antiquewhite;
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    background: #141414;
+    border-radius: .8rem;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    cursor:pointer;
+    width: 180px;
+}
+
+/* Estiliza as opções da lista */
+.user-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: .8px;
+    transition: background 0.3s;
+}
+.user-option img {
+    width: 25px;
+    height: 25px;
+    border-radius: .8rem;
+}
+.user-option:hover {
+    background: #333;
 }
 
 /*BANNER E BOTÕES PRINCIPAIS*/
@@ -150,11 +186,39 @@ border-radius: .4rem;
     align-content:bottom;
     gap: 1rem;
     max-width: 128rem;
-    height: 20rem;
+    height: 18rem;
     overflow-x: scroll;
+    overflow-y: hidden  ;
     white-space: nowrap; 
     scrollbar-width: none;
-    cursor: grab;}
+}
+#scroll-left{
+    all: unset;
+    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.048));
+    position: absolute;
+    left: 1px; /* Lateral esquerda */
+    z-index: 10;
+    color: white;
+    padding: 8rem 7rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+}
+
+#scroll-right{
+    background: linear-gradient(to left,#000000, rgba(41, 39, 39, 0));
+    position: absolute;
+    border: none;
+    right: 1px; /* Lateral esquerda */
+    z-index: 10;
+    color: white;
+    padding: 8rem 7rem;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, opacity 0.3s;
+}
 section {
          
         position: relative;
@@ -163,8 +227,8 @@ section {
         max-width: 128rem;
         height: 20rem;
         scrollbar-width: none;
-        cursor: grab;
         overflow-x: scroll;
+        overflow-y: hidden  ;
         }
         
 .serie{
@@ -180,6 +244,7 @@ section {
     height: 13rem;
     width: 26rem;
 }
+
 
 
  
